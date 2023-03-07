@@ -26,4 +26,18 @@ class Person
            value
        end
     end
+ def clean?
+        self.hygiene > 7 ? true : false
+    end
+
+    def happy?
+        self.happiness > 7 ? true : false
+    end
+
+    def get_paid(amount)
+        self.bank_account += amount
+        "all about the benjamins"
+    end
+
+    
 
